@@ -1,0 +1,30 @@
+{
+  "name": "educational-resource-generator",
+  "version": "1.0.0",
+  "description": "基于多模态大模型技术的数字化教学资源生成系统",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": [
+    "education",
+    "ai",
+    "multimodal",
+    "teaching-resources",
+    "content-generation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "form-data": "^4.0.3"
+  }
+}
